@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	background-color: rgb(239, 247, 247);
+}
+
+.container {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.currency-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container > *,
+.currency-section > * {
+	margin-block: 1rem;
+}
+
+.title {
+	color: rgb(77, 191, 203);
+}
+
+.result {
+	color: rgb(77, 191, 203);
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.first-currency-section,
+.second-currency-section {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.first-currency,
+.second-currency,
+#first-number,
+#second-number {
+	padding: 0.5rem;
+	font-size: 1rem;
+}
+
+#first-number,
+#second-number {
+	background-color: rgb(239, 247, 247);
+	border: 1px solid rgb(77, 191, 203);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<title>Currency Exchange</title>
+	</head>
+	<body>
+		<div class="container">
+			<img class="logo" src="./img/money.png" alt="logo" width="300px" />
+			<h1 class="title">Currency Exchange Rates Calculator</h1>
+			<p class="sub-title">
+				Please choose currency and amount to get the ecchange rate
+			</p>
+			<div class="currency-section">
+				<div class="first-currency-section">
+					<select
+						name="first-currency"
+						class="first-currency"
+						id="first-currency"
+					>
+						<option value="USD">USD</option>
+						<input type="number" id="first-number" />
+					</select>
+				</div>
+				<p class="result">
+					<span class="num">1</span>
+					<span id="first-currency-name">USD</span> =
+					<span class="num" id="cost">7687</span>
+					<span id="second-currency-name">EUR</span>
+				</p>
+				<div class="second-currency-section">
+					<select
+						name="second-currency"
+						id="second-currency"
+						class="second-currency"
+					>
+						<option value="USD">USD</option>
+						<input id="second-number" type="number" />
+					</select>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
